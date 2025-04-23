@@ -1,0 +1,21 @@
+managed implementation in class zbp_i_ths_tarefa unique;
+strict ( 2 );
+
+define behavior for ZI_THS_TAREFA alias Tarefa
+persistent table ZTTHS_TAREFA
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly, numbering : managed ) TarefaId;
+
+  mapping for ztths_tarefa
+  {
+    TarefaId = tarefa_id;
+    MateriaId =  materia_id;
+    Descricao = descricao;
+    Status = status;
+  }
+}

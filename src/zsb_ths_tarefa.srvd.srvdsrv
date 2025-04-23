@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition de tarefas'
+define service ZSB_THS_TAREFA {
+  expose ZC_THS_TAREFA;
+}

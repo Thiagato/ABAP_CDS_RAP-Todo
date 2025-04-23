@@ -1,0 +1,29 @@
+@Metadata.layer: #CORE
+annotate entity ZC_THS_TAREFA
+    with 
+{
+   @UI.facet: [{ id: 'GeneralInfo', purpose: #STANDARD,
+                  position: 10, type: #IDENTIFICATION_REFERENCE }]   
+
+  @UI.lineItem: [ { position: 10 } ]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  @EndUserText.label: 'Id da tarefa'
+  TarefaId;
+  @UI.lineItem: [ { position: 20 } ]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  @EndUserText.label: 'Descricao'
+  Descricao;
+  @UI.lineItem: [ { position: 30 } ]
+  @UI.selectionField: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  @EndUserText.label: 'Status'
+  Status;
+  @UI.lineItem: [ { position: 40 } ]
+  @UI.selectionField: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  @EndUserText.label: 'Nome da materia'
+  NomeMateria;
+    
+}
